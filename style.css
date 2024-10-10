@@ -11,7 +11,6 @@ h1 {
     color: black;
     padding-top: 25px;
     line-height: 1.8cm;
-
 }
 
 h2 {
@@ -21,10 +20,11 @@ h2 {
     padding-top: 25px;
     line-height: 1.8cm;
 }
-
 nav {
     padding-left: 5px;
     background-color: antiquewhite;
+    display: flex ;
+    justify-content:center;
 }
 
 footer {
@@ -41,10 +41,11 @@ img {
     margin: 0 auto;
   }
 
-  main{
+main{
     text-align: center;
     background-color:antiquewhite;
     padding-left: 5px;
+
   }
 
   .cuadro {
@@ -54,11 +55,10 @@ img {
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
-    width: 150px;
+    width: 190px;
     text-align: center;
-    margin: auto;
-
-}
+    margin: 10px;
+  }
 
  .centrandoP {
     text-align: center;
@@ -70,14 +70,14 @@ p {
 
 .cuadro2 {
     border: 2px solid #1f1c1c;
-padding: 15px;
-background-color: #f5f5f5;
-border-radius: 10px;
-font-size: 16px;
-font-weight: initial;
-width: 200px;
-text-align: center;
-margin: auto;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: initial;
+    width: 200px;
+    text-align: center;
+    margin: auto;
 }
 
 a{
@@ -104,19 +104,71 @@ div{
 
 .logo-conteiner img {
     width: 70px; 
-    height: 70px;}
+    height: 70px;
+}
 
-    div.espacio{
-        margin-top: 20px; 
-        padding-bottom: 10px; 
-        background-color: slategray;
- }
+.sectionContacto{
+    color: black;
+    padding: 30px;
+    margin-right: 10cm;
+}
+    
+fieldset{
+    background-color: white;
+    color: black;
+    padding: 25px;
+    border-color: black;
+    border-style: solid;      
+}
+legend{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px;
+    background-color: white;
+}
+.tabla{   
+table {
+    border-collapse: collapse;
+    width: 70%;
+}          
+th, td {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: left;
+    background-color: #f2f2f2;
+}          
+th {
+    background-color: #f2f2f2;
+}}
+    
+ .espaciado{
+    padding-bottom: 3%;
+    background-color: slategray;
+}
+.espaciado2{
+    padding-bottom: 2%;
+    background-color: antiquewhite;
+}
+    
+input[type="radio"] {
+    margin-left: 30px;
+    }
+input[type="checkbox"] {
+    margin-left: 30px;
+}
+    
+label, p label, input, p fieldset, fieldset p, textarea, select{
+    background-color: white;
+}
 
-      div.espacio2{
-        margin-top: 30px;    
-        padding-bottom: 20px;
-        background-color: slategray;
-      }
-
-      div.espacioTop{ margin-top: 20px; 
-        padding-bottom: 10px;}
+section {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(136, 194, 202);
+    color: black;
+    padding: 5px;
+    border-color: black;
+    border-style: solid;
+}
