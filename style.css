@@ -157,7 +157,13 @@ input[type="radio"] {
 input[type="checkbox"] {
     margin-left: 30px;
 }
-    
+
+input[type="submit"] {  
+    font-size: 0.5cm;
+}
+input[type="number"] {
+    font-size: 0.4cm;
+}
 label, p label, input, p fieldset, fieldset p, textarea, select{
     background-color: white;
 }
