@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
-    <div class="contacto">    
+<html lang="es">   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,25 +22,25 @@
         <a href="index.html"> Inicio </a>
     </div>
 </nav>
-<div class="sectionContacto">
+<form>
     <section>
         <fieldset>
             <legend>Datos Personales</legend>
-            <p> <label>Nombre (requerido): 
+            <p> <label for="nombre">Nombre (requerido)<span class="requerido">*</span>: 
             <p></p>
-            <input name="Nombre" size="15" maxlength="20"></label> </p>
+            <input type="text" id="nombre" name="Nombre" size="15" maxlength="20" required></label> </p>
 
             <p> <label>Apellido:
             <p></p>
-            <input name="Apellido" size="15" maxlength="20"></label></p>
+            <input type="text" id="Apellido" name="Apellido" size="15" maxlength="20"></label></p>
        
-            <p> <label>Email (requerido):
+            <p> <label>Email (requerido)<span class="requerido">*</span>:
             <p></p>
-            <input name="Email" size="35"></label> </p>
+            <input type="email" id="Email" name="Email" size="35"></label> </p>
             
             <p> <label>Telefono:
                 <p></p>
-                 <input type="tel" name="Telefono" size="30" placeholder="Ingrese su teléfono" pattern="\(\d{3}\)\s\d{3}-\d{4}" required></label> 
+                 <input type="tel" id ="Telefono" name="Telefono" size="30" placeholder="Ingrese su teléfono" pattern="\(\d{3}\)\s\d{3}-\d{4}" required></label> 
                 <input type="submit" value="Borrar"> </p>
             
             <p><label>Edad (mínimo 16 y máximo 120 años): 
@@ -53,47 +52,62 @@
                 <p></p>
                 <textarea id="Dirección" name="Dirección" rows="5" cols="40"> </textarea></label> </p>
                 <br>
-            <p><label>Provincia:
+<p><label>Provincia:
                 <p></p>
                 <input type="text" size="20"> 
-                <select name="Provincia" id="Provincia">
-                    <option selected value="Río Negro">Río Negro</option>
-                    <option value="Neuquén">Neuquén</option>
-                    <option value="Chubut">Chubut</option>
-                    <option value="Tierra del Fuego">Tierra del Fuego</option>
-                    <option value="Santa Cruz">Santa Cruz</option></select></label>
-                
-                <p><label>Código Postal:
-                    <p></p>
-                    <input type= "text" id="Código Postal" name="Código Postal" pattern="[A-Z]{1}\d{4}[A-Z]{3}" placeholder="A1234ABC"></label></p>
-        </fieldset>
-        <fieldset>
+                <input list="Provincias" name="Provincia">
+                <datalist id="Provincias">
+                <option selected value="Río Negro">Río Negro>
+                <option value="Neuquén">Neuquén>
+                <option value="Chubut">Chubut>
+                <option value="Tierra del Fuego">Tierra del Fuego>
+                <option value="Santa Cruz">Santa Cruz</option></label>
+<p><label>Código Postal:
+    <p></p>
+<input type= "text" id="Código Postal" name="Código Postal" pattern="[A-Z]{1}\d{4}[A-Z]{3}" placeholder="A1234ABC"></label></p>
+</fieldset>
+<fieldset>
             <legend>Método preferido de contacto</legend>
-                <p>
-                    <label> <input type="radio" name="Correo electrónico" value="Correo electrónico" checked> Correo electrónico</label>
-                    <label> <input type="radio" name="Correo postal" value="Correo postal"> Correo postal</label>
-                    <label> <input type="radio" name="Teléfono" value="Teléfono"> Teléfono</label>
-
-                    
-                </p>
-        </fieldset>
+            <div class="contacto">
+            <p>
+                <input type="radio" id="Email" name="Correo electrónico" value="Correo electrónico">
+                <label for="Email">Correo electrónico</label>
+              </p>
+              <p>
+                <input type="radio" id="CP" name="Correo Postal" value="Correo Postal">
+                <label for="CP">Correo Postal</label>
+              </p>
+              <p>
+                <input type="radio" id="contactoTelefono" name="Telefono" value="Telefono">
+                <label for="contactoTelefono">Telefono</label>
+              </p>
+              </div>
+</fieldset>
 
         <fieldset>
             <legend>Tipo de suscripción</legend>
+            <div class="suscripciones">
                 <p>
-                    <label> <input type="checkbox" name="Noticias" value="Noticias"> Noticias</label>
-                    <label> <input type="checkbox" name="Promociones" value="Promociones"> Promociones</label>
-                    <label> <input type="checkbox" name="Alertas" value="Alertas" checked> Alertas</label>
-                    <label> <input type="checkbox" name="Eventos" value="Eventos"> Eventos</label>
+                <input type="checkbox" name="suscripción" id ="Noticias" value="Noticias">
+                <input type="checkbox" name="suscripción" id ="Promociones" value="Promociones"> 
+                <input type="checkbox" name="suscripción" id ="Alertas" value="Alertas" checked> 
+                <input type="checkbox" name="suscripción" id ="Eventos" value="Eventos">
+                </p>
+            </div>
+                <p>
+                    <label class="desc" for="Noticias">Noticias</label>
+                    <label class="desc" for="Promociones">Promociones</label>
+                    <label class="desc" for="Alertas">Alertas</label>
+                    <label class="desc" for="Eventos">Eventos</label>
                 </p>
         </fieldset>
     </section>
-</div>
     <table>
         <tr>
             <td><input type="submit" value="Cargar"></td>
          </tr>
     </table>
+</form>
     <div class="espaciado2"></div>
     <div class="tabla">
     <table>

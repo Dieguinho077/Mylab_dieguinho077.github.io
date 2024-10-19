@@ -107,7 +107,7 @@ div{
     height: 70px;
 }
 
-.sectionContacto{
+form{
     color: black;
     padding: 30px;
     margin-right: 10cm;
@@ -153,13 +153,26 @@ th {
     
 input[type="radio"] {
     margin-left: 30px;
-    }
-input[type="checkbox"] {
-    margin-left: 30px;
 }
+
+.suscripciones{
+    background-color: white;
+  padding: 5px;
+}
+
+.suscripciones input[type="checkbox"]{
+    margin-left: 70px; 
+  margin-right: 10px;
+  vertical-align: middle;
+} 
+  
+.desc {
+    margin-left: 26px;
+  }
 
 input[type="submit"] {  
     font-size: 0.5cm;
+    cursor: pointer;
 }
 input[type="number"] {
     font-size: 0.4cm;
@@ -167,7 +180,6 @@ input[type="number"] {
 label, p label, input, p fieldset, fieldset p, textarea, select{
     background-color: white;
 }
-
 section {
     width: 80%;
     margin-right: auto;
@@ -178,3 +190,19 @@ section {
     border-color: black;
     border-style: solid;
 }
+
+.contacto {
+    display: flex;
+    background-color: white;
+    margin-left: 7px;   
+  }
+  .contacto label {
+    display: flex;
+    margin-left: 15px;
+  }
+
+  span{
+    color: red;
+    background-color: white;
+  }
+ 
