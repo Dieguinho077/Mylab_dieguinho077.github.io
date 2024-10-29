@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 
 
@@ -13,6 +15,7 @@
     <header>
      <h1>Contacto</h1>
 </header>
+<div class="espaciado2"></div>
 <nav>
     <div class="cuadro">
         <a href="acercade.html"> Acerca de </a>
@@ -36,7 +39,7 @@
        
             <p> <label>Email (requerido)<span class="requerido">*</span>:
             <p></p>
-            <input type="email" id="Email" name="Email" size="35"></label> </p>
+            <input type="email" id="Email" name="Email" size="35" required></label> </p>
             
             <p> <label>Telefono:
                 <p></p>
@@ -70,15 +73,15 @@
             <legend>Método preferido de contacto</legend>
             <div class="contacto">
             <p>
-                <input type="radio" id="Email" name="Correo electrónico" value="Correo electrónico">
+                <input type="radio" id="Correo electrónico" name="Correo electrónico" value="Correo electrónico">
                 <label for="Email">Correo electrónico</label>
               </p>
               <p>
-                <input type="radio" id="CP" name="Correo Postal" value="Correo Postal">
+                <input type="radio" id="Correo Postal" name="Correo Postal" value="Correo Postal">
                 <label for="CP">Correo Postal</label>
               </p>
               <p>
-                <input type="radio" id="contactoTelefono" name="Telefono" value="Telefono">
+                <input type="radio" id="Telefono" name="Telefono" value="Telefono">
                 <label for="contactoTelefono">Telefono</label>
               </p>
               </div>
@@ -140,6 +143,9 @@
         </tbody>
       </table>
 </div>
+<a href="#top" class="back-to-top">
+    <i>↑</i>
+  </a>
 </body>
 </div>
 </html>

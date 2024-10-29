@@ -5,6 +5,11 @@
     background-color: antiquewhite;
 }
 
+header{
+    position: fixed;
+    width: 100%;
+}
+
 h1 {
     text-align: center;
     background-color: slategray;
@@ -21,6 +26,7 @@ h2 {
     line-height: 1.8cm;
 }
 nav {
+    padding-bottom: 30px;
     padding-left: 5px;
     background-color: antiquewhite;
     display: flex ;
@@ -33,6 +39,7 @@ footer {
     color: black;
     padding-left: 5px;
     padding-top: 0.6cm;
+    padding-bottom: 55px;
 }
 img {
     width:15vw;
@@ -126,17 +133,20 @@ legend{
     font-size: large;
     padding: 5px;
     background-color: white;
+    font-family: 'IBM Plex Mono', monospace;
 }
 .tabla{   
 table {
     border-collapse: collapse;
     width: 70%;
+    font-family: 'IBM Plex Mono', monospace;
 }          
 th, td {
     border: 1px solid gray;
     padding: 8px;
     text-align: left;
     background-color: #f2f2f2;
+    font-family: 'IBM Plex Mono', monospace;
 }          
 th {
     background-color: #f2f2f2;
@@ -147,7 +157,11 @@ th {
     background-color: slategray;
 }
 .espaciado2{
-    padding-bottom: 2%;
+    padding-bottom: 10%;
+    background-color: antiquewhite;
+}
+.espaciado3{
+    padding-bottom: 3%;
     background-color: antiquewhite;
 }
     
@@ -206,3 +220,54 @@ section {
     background-color: white;
   }
  
+  #myHeader {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: slategray;
+ padding-left: 9cm;
+  }
+
+.logo {
+    width: 60px;
+    height: auto;
+    background-color: slategray;
+    animation: rotate 2s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Bibliografia {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  i {
+    font-size: 40px;
+    color: black;
+    background-color: white;
+  }
+
+  .articulo {
+    max-height: 300px;
+    overflow: auto;
+}
+
+.fijar {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
