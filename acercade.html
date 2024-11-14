@@ -55,6 +55,14 @@
 Esta Página cuenta con varias etiquetas de HTML pero también con un estilo personalizado de css. 
 Sin nada mas que aclarar, me despido. bye </p>
 </div>
+<button id="readMore">Leer más</button>
+<div id="fullCV" class="hidden">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Est nam placeat libero obcaecati ratione dolor qui sit ab earum nemo id sapiente voluptate recusandae, 
+    debitis cum delectus magni soluta quae quibusdam repellendus reprehenderit,
+    laudantium natus beatae asperiores! Voluptas distinctio quibusdam dolore iusto nesciunt ducimus cupiditate
+     ut laudantium enim tempore ex excepturi, quasi quidem debitis amet officia nam odio error quia.
+</div>
 <div class="espacioTop"></div>
 
 <a href="#top" class="back-to-top">
@@ -76,5 +84,17 @@ Sin nada mas que aclarar, me despido. bye </p>
     &copy; CURZA 2024. Todos los derechos reservados. &copy;
   </div>
 </footer>
+<script>
+  const readMoreButton = document.getElementById('readMore');
+  const fullCV = document.getElementById('fullCV');
+  let isVisible = false;
+
+readMoreButton.addEventListener('click', () => {
+  if (!isVisible) {
+    fullCV.classList.add('show');
+    isVisible = true;
+  }
+});
+</script>
 </body>
 </html>

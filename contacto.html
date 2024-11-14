@@ -25,7 +25,7 @@
         <a href="index.html"> Inicio </a>
     </div>
 </nav>
-<form>
+<form id="myForm">
     <section>
         <fieldset>
             <legend>Datos Personales</legend>
@@ -43,7 +43,7 @@
             
             <p> <label>Telefono:
                 <p></p>
-                 <input type="tel" id ="Telefono" name="Telefono" size="30" placeholder="Ingrese su teléfono" pattern="\(\d{3}\)\s\d{3}-\d{4}" required></label> 
+                 <input type="tel" id ="Telefono" name="Telefono" size="30" placeholder="Ingrese su teléfono" pattern="^\d{3}-\d{3}-\d{4}$|^\(\d{3}\)\s\d{3}-\d{4}$" required></label> 
                 <input type="submit" value="Borrar"> </p>
             
             <p><label>Edad (mínimo 16 y máximo 120 años): 
@@ -113,7 +113,7 @@
 </form>
     <div class="espaciado2"></div>
     <div class="tabla">
-    <table>
+    <table id="myTable">
         <thead>
             <th>Campo:</th>
             <th>Valor:</th>
@@ -121,24 +121,24 @@
         <tbody>
         <tr>
             <td>Nombre:</td>
-            <td></td>
+            <td id="nombreCelda"></td>
         
         </tr>
         <tr>
             <td>Apellido:</td>
-            <td></td>
+            <td id="apellidoCelda"></td>
         </tr>
         <tr>
             <td>Email:</td>
-            <td></td>
+            <td id="emailCelda"></td>
         </tr>
         <tr>
             <td>Telefono:</td>
-            <td></td>
+            <td id="telefonoCelda"></td>
         </tr>
         <tr>
             <td>Edad:</td>
-            <td></td>
+            <td id="edadCelda"></td>
         </tr>      
         </tbody>
       </table>
@@ -146,6 +146,11 @@
 <a href="#top" class="back-to-top">
     <i>↑</i>
   </a>
+  <script src="script.js">
+
+
+
+  </script>
 </body>
 </div>
 </html>
