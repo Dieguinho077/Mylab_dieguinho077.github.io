@@ -63,6 +63,7 @@ Sin nada mas que aclarar, me despido. bye </p>
     laudantium natus beatae asperiores! Voluptas distinctio quibusdam dolore iusto nesciunt ducimus cupiditate
      ut laudantium enim tempore ex excepturi, quasi quidem debitis amet officia nam odio error quia.
 </div>
+<button id="readLess">Leer menos</button>
 <div class="espacioTop"></div>
 
 <a href="#top" class="back-to-top">
@@ -85,14 +86,22 @@ Sin nada mas que aclarar, me despido. bye </p>
   </div>
 </footer>
 <script>
-  const readMoreButton = document.getElementById('readMore');
-  const fullCV = document.getElementById('fullCV');
   let isVisible = false;
+
+  const readMoreButton = document.getElementById('readMore');
+  const readLessButton = document.getElementById('readLess');
+  const fullCV = document.getElementById('fullCV');
 
 readMoreButton.addEventListener('click', () => {
   if (!isVisible) {
     fullCV.classList.add('show');
     isVisible = true;
+  }
+});
+readLessButton.addEventListener('click', () => {
+  if (isVisible) {
+    fullCV.classList.remove('show');
+    isVisible = false;
   }
 });
 </script>

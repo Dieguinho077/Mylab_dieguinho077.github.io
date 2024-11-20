@@ -39,3 +39,33 @@ telefono.addEventListener('input', () => {
 edad.addEventListener('input', () => {
     edadCelda.textContent = edad.value;
 });
+
+function validarFormulario() {function validateForm() {
+   
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value)) {
+      alert('Por favor, ingresa una dirección de correo electrónico válida.');
+      return false;
+    }
+  
+
+   const telefonoRegex = /^\d{3}-\d{3}-\d{4}$|^\(\d{3}\)\s\d{3}-\d{4}$/;
+    if (!telefonoRegex.test(telefono.value)) {
+      alert('Por favor, ingresa un número de teléfono válido.');
+      return false;
+    }
+  
+  
+    const edadRegex = /^[1-9][0-9]$/;
+    if (!edadRegex.test(edad.value)) {
+      alert('Por favor, ingresa una edad valida.');
+      return false;
+    }
+    if (edad.value < 16 || edad.value > 120) {
+      alert('La edad debe estar entre 16 y 120.');
+      return false;
+    }
+  
+    return true;
+  }
+}
