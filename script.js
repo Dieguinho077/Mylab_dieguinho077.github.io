@@ -16,6 +16,27 @@ const edadCelda = document.getElementById('edadCelda')
 const telefonoInput = document.getElementById('Telefono');
 const borrarButton = document.querySelector('input[type="submit"][value="Borrar"]');
 
+function obtenerMetodoContacto() {
+  const radios = document.querySelectorAll('input[type="radio"]');
+
+  radios.forEach(radio => {
+    if (radio.checked) {
+      console.log("Método de contacto seleccionado:", radio.value);
+    }
+  });
+}
+
+  function obtenerSuscripciones() {
+    const suscripcionesSeleccionadas = [];
+    const checkboxes = document.querySelectorAll('input[name="suscripcion"]:checked');
+  
+    checkboxes.forEach(checkbox => {
+      suscripcionesSeleccionadas.push(checkbox.value);
+    });
+  
+    console.log("Suscripciones seleccionadas:", suscripcionesSeleccionadas);
+  }
+
 borrarButton.addEventListener('click', () => {
   telefonoInput.value = '';
 });
